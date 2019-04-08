@@ -52,7 +52,7 @@ def do_deploy(archive_path):
         return False
     res = run('mv /data/web_static/releases/{}/web_static/* \
                /data/web_static/releases/{}'
-               .format(no_ext_archive, no_ext_archive))
+              .format(no_ext_archive, no_ext_archive))
     if res.failed:
         print('failed to move extraction to proper directory...')
         return False
