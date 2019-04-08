@@ -25,6 +25,9 @@ def do_pack():
 def do_deploy(archive_path):
     """deploys a static archive to web servers
     """
+    if not os.path.isfile(archive_path):
+        print('path to archive is not a file...')
+        return False
     try:
         archive = archive_path.split('/')[1]
         no_ext_archive = archive.split('.')[0]
