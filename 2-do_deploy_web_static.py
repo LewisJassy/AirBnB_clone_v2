@@ -4,7 +4,7 @@
 from fabric.api import *
 from fabric.operations import put
 from datetime import datetime
-
+import os
 
 env.hosts = ['35.243.204.105', '35.190.182.239']
 
@@ -26,7 +26,7 @@ def do_deploy(archive_path):
     """deploys a static archive to web servers
     """
     if not os.path.isfile(archive_path):
-        print('path to archive is not a file...')
+        print('archive file does not exist...')
         return False
     try:
         archive = archive_path.split('/')[1]
