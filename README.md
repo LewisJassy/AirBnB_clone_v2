@@ -39,7 +39,7 @@ $ sudo ./fabricinstall.sh
 
 ## :mag: License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/BennettDixon/holbertonschool-higher_level_programming/blob/master/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/BennettDixon/AirBnB_clone_v2/blob/master/LICENSE.md) file for details
 
 
 
