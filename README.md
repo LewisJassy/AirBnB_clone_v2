@@ -1,54 +1,48 @@
-# HBNB
+# :shell: 0x0C - AirBnB Clone V2 :shell:
 
-This is the console /command interpreter for the Holberton Airbnb clone project. The console can be used to store objects in and retrieve objects from a JSON.
+In this project I will be deploying my static web content to my servers currently in use by my load balancer. In order to do this I will be using a combination of bash, puppet, and fabric. I am looking forward into getting into more deployability and agile methodology.
 
-### Supported classes:
-* BaseModel
-* User
-* State
-* City
-* Amenity
-* Place
-* Review
+## :running: Getting Started
 
-### Commands:
-* create - create an object
-* show - show an object (based on id)
-* destroy - destroy an object
-* all - show all objects, of one type or all types
-* quit/EOF - quit the console
-* help - see descriptions of commands
+* [Ubuntu 14.04 LTS](http://releases.ubuntu.com/14.04/) - Operating system reqd.
 
-To start, navigate to the project folder and enter `./console.py` in the shell.
+* [Python 3.4](https://www.python.org/download/releases/3.4.0/) - Python Version Used
 
-#### Create
-`create <class name>`
-Ex:
-`create BaseModel`
+* [Fabric3](https://pypi.org/project/Fabric3/) - Fabric Version Used
 
-#### Show
-`show <class name> <object id>`
-Ex:
-`show User my_id`
+## :warning: Prerequisites
 
-#### Destroy
-`destroy <class name> <object id>`
-Ex:
-`destroy Place my_place_id`
+* Must have `git` installed
 
-#### All
-`all` or `all <class name>`
-Ex:
-`all` or `all State`
+* Must have repository cloned
 
-#### Quit
-`quit` or `EOF`
+* Must have `python3` installed
 
-#### Help
-`help` or `help <command>`
-Ex:
-`help` or `help quit`
+* Must have `Fabric3` installed
 
-Additionally, the console supports `<class name>.<command>(<parameters>)` syntax.
-Ex:
-`City.show(my_city_id)`
+```
+$ sudo apt-get install git
+```
+
+```
+$ sudo apt-get install python3
+```
+
+```
+$ wget "https://raw.githubusercontent.com/BennettDixon/automation_ftw/master/Fabric3/fabricinstall.sh"
+$ chmod u+x fabricinstall.sh
+$ sudo ./fabricinstall.sh
+```
+
+## :blue_book: Authors
+* **Bennett Dixon** - [@BennettDixon](https://github.com/BennettDixon)
+
+## :mag: License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/BennettDixon/holbertonschool-higher_level_programming/blob/master/LICENSE.md) file for details
+
+
+
+## :mega: Acknowledgments
+
+* Holberton School (providing guidance)
