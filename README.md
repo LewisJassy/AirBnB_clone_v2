@@ -1,6 +1,6 @@
-# :shell: 0x0C - AirBnB Clone V2 :shell:
+# :shell: AirBnB Clone V2 :shell:
 
-In this project I will be deploying my static web content to my servers currently in use by my load balancer. In order to do this I will be using a combination of bash, puppet, and fabric. I am looking forward into getting into more deployability and agile methodology.
+In this project I will be deploying my static web content to my servers currently in use by my load balancer. In order to do this I will be using a combination of bash, puppet, and fabric. I am looking forward into getting into more deployability and agile methodology. I have previously implemented the console, sqlalchemy, file storage, and server deployment.
 
 ## :running: Getting Started
 
