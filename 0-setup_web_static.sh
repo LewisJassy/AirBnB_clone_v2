@@ -26,16 +26,20 @@ mkdir -p $STATIC/releases/test
 mkdir -p $STATIC/shared
 echo 'Holberton School Is Running!' > $STATIC/releases/test/index.html
 ln -sfn $STATIC/releases/test $STATIC/current
-chown -f ubuntu:ubuntu /data/
+sudo chown -f -R ubuntu:ubuntu /data/
 
 # update config file to redirect
 printf %s "server {
     listen 80;
     listen [::]:80 default_server;
     root   $STATIC/current;
-    index  index.html index.htm;
+    index  index.html index.htm 8-index.html;
 
     add_header X-Served-By $HOST_NAME;
+
+    location / {
+        alias $STATIC/current/;
+    }
 
     location /redirect_me {
         return 301 http://google.com/;
