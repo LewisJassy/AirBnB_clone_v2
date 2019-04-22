@@ -7,12 +7,8 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hello():
+    """basic routing"""
     return 'Hello HBNB!'
-
-
-@app.route('/test')
-def test():
-    return 'test'
 
 
 if __name__ == '__main__':
