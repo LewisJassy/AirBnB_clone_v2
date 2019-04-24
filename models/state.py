@@ -19,9 +19,9 @@ class State(BaseModel, Base):
                               backref="state",
                               cascade="all, delete-orphan",
                               passive_deletes=True)
-
-    @property
-    def cities(self):
-        if environ.get('HBNB_TYPE_STORAGE') != 'db':
-            return [city for city in storage.all(
-                City).values() if city.state_id == self.id]
+    else:
+        @property
+        def cities(self):
+            if environ.get('HBNB_TYPE_STORAGE') != 'db':
+                return [city for city in storage.all(
+                    City).values() if city.state_id == self.id]
