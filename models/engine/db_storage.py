@@ -107,3 +107,7 @@ class DBStorage:
             self.__session = Session()
         except Exception as E:
             print(E)
+
+    def close(self):
+        """removes our session"""
+        self.__session.remove()
