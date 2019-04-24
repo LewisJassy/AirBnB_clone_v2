@@ -6,6 +6,7 @@ from flask import Flask
 from flask import render_template
 app = Flask(__name__)
 
+
 @app.teardown_appcontext
 def appcontext_teardown(exc=None):
     """called on teardown of app contexts,
@@ -16,6 +17,7 @@ def appcontext_teardown(exc=None):
             storage.
     """
     storage.close()
+
 
 @app.route('/states_list', strict_slashes=False)
 def conditional_templating(n=None):
