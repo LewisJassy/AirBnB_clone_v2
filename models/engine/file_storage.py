@@ -69,6 +69,6 @@ class FileStorage:
             del(self.__objects[key])
         return
 
-    def close(self)
+    def close(self):
         """closes file storage engine"""
         self.reload()
