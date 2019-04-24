@@ -38,7 +38,7 @@ class BaseModel():
                     value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
                 elif key == "updated_at":
                     updated_set = True
-                    value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f") 
+                    value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
                 if key != "__class__":
                     setattr(self, key, value)
         if not created_set:
